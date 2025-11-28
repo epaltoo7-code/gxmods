@@ -1,183 +1,96 @@
 {
-    "name": "MOD NAME GOES HERE",
-    "description": "MOD DESCRIPTION GOES HERE",
-    "developer":
-    {
-        "name": "DEVELOPER NAME GOES HERE"
-    },
-    "icons":
-    {
-        "512": "icon_512.png"
-    },
-    "manifest_version": 3,
-    "mod":
-    {
-        "license": "license.txt",
-        "payload":
-        {
-            "background_music":
-            [
-                "music/track_1.mp3",
-                "music/track_2.mp3",
-                "music/track_3.mp3",
-                "music/track_4.mp3"
-            ],
-            "browser_sounds":
-            {
-                "CLICK":
-                [
-                    "sound/click.mp3"
-                ],
-                "FEATURE_SWITCH_OFF":
-                [
-                    "sound/feature_switch_off.mp3"
-                ],
-                "FEATURE_SWITCH_ON":
-                [
-                    "sound/feature_switch_on.mp3"
-                ],
-                "HOVER":
-                [
-                    "sound/hover.mp3"
-                ],
-                "HOVER_UP":
-                [
-                    "sound/hover.mp3"
-                ],
-                "IMPORTANT_CLICK":
-                [
-                    "sound/important_click.mp3"
-                ],
-                "LEVEL_UPGRADE":
-                [
-                    "sound/level_upgrade.mp3"
-                ],
-                "LIMITER_OFF":
-                [
-                    "sound/limiter_off.mp3"
-                ],
-                "LIMITER_ON":
-                [
-                    "sound/limiter_on.mp3"
-                ],
-                "SWITCH_TOGGLE":
-                [
-                    "sound/switch.mp3"
-                ],
-                "TAB_CLOSE":
-                [
-                    "sound/close_tab.mp3"
-                ],
-                "TAB_INSERT":
-                [
-                    "sound/new_tab.mp3"
-                ],
-                "TAB_SLASH":
-                [
-                    "sound/tab_slash.mp3"
-                ]
-            },
-            "keyboard_sounds":
-            {
-                "TYPING_BACKSPACE":
-                [
-                    "keyboard/backspace.wav"
-                ],
-                "TYPING_ENTER":
-                [
-                    "keyboard/enter.wav"
-                ],
-                "TYPING_LETTER":
-                [
-                    "keyboard/letter_1.wav",
-                    "keyboard/letter_2.wav",
-                    "keyboard/letter_3.wav"
-                ],
-                "TYPING_SPACE":
-                [
-                    "keyboard/space.wav"
-                ]
-            },
-            "page_styles":
-            [
-                {
-                    "css":
-                    [
-                        "webmodding/opera.css"
-                    ],
-                    "matches":
-                    [
-                        "https://ftp.opera.com/*"
-                    ]
-                }
-            ],
-            "shaders":
-            {
-                "Matrix green":
-                {
-                    "path": "shader/matrix.txt"
-                },
-                "Wave":
-                {
-                    "animation":
-                    {
-                        "duration": 60,
-                        "steps": 3600
-                    },
-                    "path": "shader/wave.txt"
-                }
-            },
-            "theme":
-            {
-                "dark":
-                {
-                    "gx_accent":
-                    {
-                        "h": 85,
-                        "s": 100,
-                        "l": 72
-                    },
-                    "gx_secondary_base":
-                    {
-                        "h": 272,
-                        "s": 64,
-                        "l": 16
-                    }
-                },
-                "light":
-                {
-                    "gx_accent":
-                    {
-                        "h": 112,
-                        "s": 80,
-                        "l": 44
-                    },
-                    "gx_secondary_base":
-                    {
-                        "h": 272,
-                        "s": 32,
-                        "l": 16
-                    }
-                }
-            },
-            "wallpaper":
-            {
-                "dark":
-                {   
-                    "image": "wallpaper/dark.png",
-                    "text_color": "#FFFFFF",
-                    "text_shadow": "#757575"
-                },
-                "light":
-                {
-                    "image": "wallpaper/video.webm",
-                    "first_frame": "wallpaper/first_frame.jpeg",
-                    "text_color": "#FFFFFF",
-                    "text_shadow": "#0B000E"
-                }
-            }
-        },
-        "schema_version": 1
-    },
-    "version": "1.0"
-}
+  "manifestVersion": 1,
+  "name": "TWICE Theme Template",
+  "version": "1.0.0",
+  "author": "[Your Name]",
+  "description": "An Opera GX mod template inspired by TWICE. Replace placeholder assets and colors to build your theme.",
+
+  "background": {
+    "type": "image",
+    "path": "assets/me_you_background.jpg",
+    "fit": "cover"
+  },
+
+  "sounds": {
+    "startup": "assets/feel_special_instrumental.mp3",
+    "click": "assets/hare_hare_click.mp3",
+    "hover": "assets/hare_hare_hover.mp3"
+  },
+
+  "colors": {
+    "primary": "#D4A8FF",
+    "secondary": "#8A57C6",
+    "accent": "#FFD175",
+    "text": "#F2E9FF",
+    "background": "#0A0A0F"
+  },
+
+  "icons": {
+    "logo": "assets/twice_me_you_logo.png",
+    "browserIcon": "assets/me_you_icon.png",
+    "members": {
+      "nayeon": "assets/icons/nayeon_feel_special.png",
+      "jeongyeon": "assets/icons/jeongyeon_feel_special.png",
+      "momo": "assets/icons/momo_feel_special.png",
+      "sana": "assets/icons/sana_feel_special.png",
+      "jihyo": "assets/icons/jihyo_feel_special.png",
+      "mina": "assets/icons/mina_feel_special.png",
+      "dahyun": "assets/icons/dahyun_feel_special.png",
+      "chaeyoung": "assets/icons/chaeyoung_feel_special.png",
+      "tzuyu": "assets/icons/tzuyu_feel_special.png"
+    }
+  },
+
+  "keyboard": {
+    "sound": "assets/keyboard.mp3",
+    "volume": 0.5
+  },
+
+  "animation": {
+    "type": "glow",
+    "color": "#D4A8FF",
+    "speed": 0.9
+  },
+
+  "notes": "Replace all files in /assets with your own TWICE-themed art and audio. Ensure proper licensing if distributing."
+,
+  "styleGuide": {
+    "iconSize": "128x128",
+    "borderRadius": "12px",
+    "shadow": "0 0 12px #D4A8FF",
+    "colorTone": "golden-soft light with muted highlights",
+    "instructions": "Maintain consistent glow and composition across all member icons."
+  },
+  "hoverEffects": {
+    "enabled": true,
+    "effect": "glow",
+    "colorByMember": {
+      "nayeon": "#A7D2FF",
+      "jeongyeon": "#C2E3FF",
+      "momo": "#FFB7E1",
+      "sana": "#FFD3E9",
+      "jihyo": "#FFE29B",
+      "mina": "#D0FFF8",
+      "dahyun": "#FFFFFF",
+      "chaeyoung": "#FF9F8C",
+      "tzuyu": "#8EDCFF"
+    }
+  },
+  "memberSelectUI": {
+    "type": "grid",
+    "columns": 3,
+    "iconHighlight": "goldFrame",
+    "soundPreview": true
+  },
+  "iconFrames": {
+    "type": "sparkleGold",
+    "path": "assets/frames/sparkle_gold_frame.png",
+    "description": "A glowing gold frame with subtle sparkles inspired by the Feel Special music video."
+  }
+ ,
+  "detailedBuildGuide": "
+Step-by-step Detailed Build Guide for the TWICE 'Me + You' / 'Feel Special' Mod\n\nPrerequisites:\n1) Opera GX installed (latest stable).\n2) A plain-text editor (VS Code recommended).\n3) Basic image editor (Photoshop, GIMP, or free online tools).\n4) Audio editor (Audacity or similar) if you need to trim/convert songs.\n5) A folder where you will assemble your mod files.\n\nPART A — Prepare your assets (images & audio)\n1. Background Image: create or choose an image sized at least 1920x1080 (JPG or PNG). Name it `me_you_background.jpg`.\n   - Tip: export a 2:1 version for ultrawide users (3840x1080).\n2. Member Icons: create 9 square icons sized 512x512 (128x128 minimum). Save as PNG with transparent backgrounds, named exactly as in the template: `nayeon_feel_special.png`, `jeongyeon_feel_special.png`, etc.\n   - Use consistent composition and lighting per the styleGuide in the template.\n   - Add a 6–10px inner padding so the sparkle frame has breathing room.\n3. Frames & UI art: export `sparkle_gold_frame.png` at the same size as the icons (512x512), with transparent centre.\n4. Sounds: Obtain the instrumental of "Feel Special" (ensure you have rights to use it) and trim to a 10–30s loop for startup. Save as `feel_special_instrumental.mp3` (128–256 kbps).\n   - Create short, percussive click & hover sounds inspired by "Hare Hare" (10–300 ms). Export as `hare_hare_click.mp3` and `hare_hare_hover.mp3`.\n5. Optional: keyboard sound pack (loopable 50–200 ms audio files) named `keyboard.mp3`.\n\nPART B — Folder structure (exact filenames matter)\nCreate a folder `TWICE_Mod/` with the structure below (case-sensitive):\n\nTWICE_Mod/\n  mod.json  <-- copy the template (ensure file is UTF-8)\n  assets/\n    me_you_background.jpg\n    feel_special_instrumental.mp3\n    hare_hare_click.mp3\n    hare_hare_hover.mp3\n    icons/\n      nayeon_feel_special.png\n      ... (all members)\n    frames/\n      sparkle_gold_frame.png\n\nPART C — Edit `mod.json` carefully\n1. Open `mod.json` in your editor.\n2. Update any file paths that differ from your assets folder. Paths in the template are relative to the mod root (e.g., `assets/icons/nayeon_feel_special.png`).\n3. If you change color hexes, validate them are 6 hex characters (e.g., `#D4A8FF`).\n4. Set sensible volumes for audio (0.0 to 1.0).\n5. Example small validation checklist: no trailing commas in JSON, all strings quoted, and all asset files referenced actually exist.\n\nPART D — Small CSS/JS snippets (for visual polish)\nIf your mod system supports small style overrides, use these examples:\n
+/* Glow effect for icons */\n.icon {\n  width: 128px;\n  height: 128px;\n  border-radius: 12px;\n  box-shadow: 0 0 12px rgba(212,168,255,0.55);\n  transition: box-shadow 180ms ease, transform 180ms ease;\n}\n.icon:hover {\n  transform: translateY(-4px);\n  box-shadow: 0 0 22px rgba(212,168,255,0.85);\n}\n\n/* Gold sparkle frame overlay */\n.icon-frame {\n  background-image: url('assets/frames/sparkle_gold_frame.png');\n  background-size: cover;\n}\n\nPART E — Audio handling tips\n1. Looping music: trim a clean loop and fade end→start (0.1–0.5s crossfade) to avoid clicks.\n2. Normalize audio to -1 dB for loudness consistency.\n3. Keep click/hover SFX short and lower volume than background (try 0.15 to 0.35).\n\nPART F — Loading & testing in Opera GX\n1. Open Opera GX → Settings → Advanced → Developer → Enable `Allow Mods` and `Developer Mode`.\n2. Open the Mods menu (Ctrl+Shift+E).\n3. Click `Load unpacked` → select the `TWICE_Mod` folder.\n4. Start testing:\n   - Open a new tab → does the background appear?\n   - Restart Opera GX (if necessary) → does the startup music play?\n   - Mouse over member icons → do hover sounds and glow appear?\n   - Click icon → does click sound & member select UI open?\n\nDebugging tips: check console (Developer Tools) for file-not-found errors; verify file names & JSON paths; check audio formats if playback fails.\n\nPART G — Packaging for distribution\n1. Verify licensing: confirm you have permission to distribute any copyrighted music or images.\n2. Create a zip of the mod folder (Windows PowerShell):\n   Compress-Archive -Path .\TWICE_Mod\* -DestinationPath .\TWICE_Mod.zip\n3. Rename `TWICE_Mod.zip` to `TWICE_Mod.gxmod` if required or use Opera GX export feature (recommended).\n\nPART H — Accessibility & performance checks\n1. Provide an option to mute background music.\n2. Keep background image size under 3–5 MB for faster loading; consider a progressive JPG.\n3. Optimize PNGs (use pngquant or TinyPNG) and convert large assets to WebP if supported.\n\nLegal note: Using original TWICE recordings or official artwork likely requires permission from the rights holders. For public distribution, prefer fan-art you made or licensed covers/instrumentals.\n\nIf you want, I can next: \n- build a ready-to-download ZIP with placeholder assets I generate for you, or \n- create sample icon mockups for each member (512x512 PNGs) and add them to the template so the folder is ready to load.\n
+"
+}]}
+
